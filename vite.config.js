@@ -1,11 +1,12 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
+// Chỉ dùng proxy khi dev local, production dùng VITE_API_URL
 export default defineConfig({
   plugins: [react()],
   server: {
     proxy: {
-      '/api': { target: 'https://shoptinhyeu-backend-1.onrender.com', changeOrigin: true }
+      '/api': { target: 'http://localhost:5000', changeOrigin: true }
     }
   }
 })
