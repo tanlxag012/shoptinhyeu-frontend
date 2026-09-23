@@ -33,9 +33,7 @@ export const MENH_COLORS = {
 
 export const PAYMENT_METHODS = {
   COD:           'Thanh toán khi nhận hàng',
-  BANK_TRANSFER: 'Chuyển khoản ngân hàng',
-  MOMO:          'Ví MoMo',
-  VNPAY:         'VNPay',
+  BANK_TRANSFER: 'Chuyển khoản ngân hàng'
 }
 
 export const truncate = (str, n=60) => str?.length > n ? str.slice(0,n)+'...' : str
